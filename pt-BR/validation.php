@@ -26,7 +26,8 @@ return array(
         "file"    => "O campo :attribute deverá ter um tamanho entre :min - :max kilobytes.",
         "string"  => "O campo :attribute deverá conter entre :min - :max caracteres.",
         "array"   => "O campo :attribute precisar ter entre :min - :max itens."
-    ),  
+    ),
+    "boolean"          => "O campo :attribute deverá ter o valor true ou false",
     "confirmed"        => "A confirmação para o campo :attribute não coincide.",
     "date"             => "O campo :attribute não contém uma data válida.",
     "date_format"      => "A data indicada para o campo :attribute não respeita o formato :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => "É obrigatória a indicação de um valor para o campo :attribute.",
     "required_if"      => "É obrigatória a indicação de um valor para o campo :attribute quando o valor do campo :other é igual a :value.",
     "required_with"    => "É obrigatória a indicação de um valor para o campo :attribute quando :values está presente.",
+    "required_with_all" => "É obrigatória a indicação de um valor para o campo :attribute quando um dos :values está presente.",
     "required_without" => "É obrigatória a indicação de um valor para o campo :attribute quanto :values não está presente.",
     "required_without_all" => "É obrigatória a indicação de um valor para o campo :attribute quando nenhum dos :values está presente.",
     "same"             => "Os campos :attribute e :other deverão conter valores iguais.",
@@ -67,7 +69,7 @@ return array(
         "string"  => "O campo :attribute deverá conter :size caracteres.",
         "array"   => "O campo :attribute deve ter :size itens."
     ),
-    "unique"           => "O valor indicado para o campo :attribute já se encontra registado.",
+    "unique"           => "O valor indicado para o campo :attribute já se encontra registrado.",
     "url"              => "O formato do URL indicado para o campo :attribute é inválido.",
 
     /*
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

@@ -14,7 +14,7 @@ return array(
     */
 
     "accepted"         => ":attribute debe ser aceptado.",
-    "active_url"       => ":attribute no es una URL válida.",
+    "active_url"       => ":attribute no es un URL válido.",
     "after"            => ":attribute debe ser una fecha posterior a :date.",
     "alpha"            => ":attribute solo debe contener letras.",
     "alpha_dash"       => ":attribute solo debe contener letras, números y guiones.",
@@ -27,6 +27,7 @@ return array(
         "string"  => ":attribute tiene que tener entre :min - :max caracteres.",
         "array"   => ":attribute tiene que tener entre :min - :max ítems.",
     ),
+    "boolean"          => "El campo :attribute debe tener un valor verdadero o falso.",
     "confirmed"        => "La confirmación de :attribute no coincide.",
     "date"             => ":attribute no es una fecha válida.",
     "date_format"      => ":attribute no corresponde al formato :format.",
@@ -58,8 +59,9 @@ return array(
     "required"         => "El campo :attribute es obligatorio.",
     "required_if"      => "El campo :attribute es obligatorio cuando :other es :value.",
     "required_with"    => "El campo :attribute es obligatorio cuando :values está presente.",
+    "required_with_all" => "El campo :attribute es obligatorio cuando :values está presente.",
     "required_without" => "El campo :attribute es obligatorio cuando :values no está presente.",
-    "required_without_all" => "The :attribute field is required when none of :values are present.",
+    "required_without_all" => "El campo :attribute es obligatorio cuando ninguno de :values estén presentes.",
     "same"             => ":attribute y :other deben coincidir.",
     "size"             => array(
         "numeric" => "El tamaño de :attribute debe ser :size.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

@@ -13,12 +13,12 @@ return array(
     |
     */
 
-    "password" => "Mật khẩu phải gồm 6 ký tự và khớp với phần xác nhận.",
+    "password" => "Lozinke moraju biti najmanje 6 karaktera.",
 
-    "user"     => "Không tìm thấy user với địa chỉ email này.",
+    "user"     => "Nijesmo uspeli pronaći korisnika sa unešenom emajl adresom.",
 
-    "token"    => "Mã reset mật khẩu không hợp lệ.",
+    "token"    => "Unešena oznaka za resetovanje lozinke nije validna.",
 
-    "sent"     => "Cấp lại mật khẩu đã đuợc gửi!",
+    "sent"     => "Poslali smo link za resetovanje vaše lozinke!",
 
 );

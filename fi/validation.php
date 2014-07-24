@@ -27,6 +27,7 @@ return array(
         "string"  => ":attribute elementin pitää olla välillä :min - :max kirjainta.",
         "array"   => "The :attribute must have between :min - :max items."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => ":attribute vahvistus ei täsmää.",
     "date"             => ":attribute ei ole kelvollinen päivämäärä.",
     "date_format"      => ":attribute ei vastaa muotoa :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => ":attribute kenttä on pakollinen.",
     "required_if"      => "The :attribute field is required when :other is :value.",
     "required_with"    => "The :attribute field is required when :values is present.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "The :attribute field is required when :values is not present.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => ":attribute ja :other on oltava samat.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

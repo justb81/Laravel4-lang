@@ -27,6 +27,7 @@ return array(
         "string"  => ":attribute musi zawierać się w granicach :min - :max znaków.",
         "array"   => ":attribute musi składać się z :min - :max elementów."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "Potwierdzenie :attribute nie zgadza się.",
     "date"             => ":attribute nie jest prawidłową datą.",
     "date_format"      => ":attribute nie jest w formacie :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => "Pole :attribute jest wymagane.",
     "required_if"      => "Pole :attribute jest wymagane gdy :other jest :value.",
     "required_with"    => "Pole :attribute jest wymagane gdy :values jest obecny.",
+    "required_with_all"    => "The :attribute field is required when :values is present.",
     "required_without" => "Pole :attribute jest wymagane gdy :values nie jest obecny.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => "Pole :attribute i :other muszą się zgadzać.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

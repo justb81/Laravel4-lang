@@ -26,6 +26,7 @@ return array(
         "string"  => ":attribute duhet të jetë në mes :min - :max karaktereve.",
         "array"   => "The :attribute must have between :min - :max items."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => ":attribute konfirmimi nuk përputhet.",
     "date"             => "The :attribute is not a valid date.",
     "date_format"      => "The :attribute does not match the format :format.",
@@ -57,6 +58,7 @@ return array(
     "required"         => ":attribute fusha është e nevojshme.",
     "required_if"      => "The :attribute field is required when :other is :value.",
     "required_with"    => "The :attribute field is required when :values is present.",
+    "required_with_all"    => "The :attribute field is required when :values is present.",
     "required_without" => "The :attribute field is required when :values is not present.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => ":attribute dhe :other duhet të përputhen.",
@@ -80,7 +82,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

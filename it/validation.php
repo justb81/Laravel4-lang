@@ -26,6 +26,7 @@ return array(
         "string"  => ":attribute deve trovarsi tra :min - :max caratteri.",
         "array"   => ":attribute deve avere tra :min - :max elementi."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "Il campo di conferma per :attribute non coincide.",
     "date"             => ":attribute non è una data valida.",
     "date_format"      => ":attribute non coincide con il formato :format.",
@@ -57,6 +58,7 @@ return array(
     "required"         => ":attribute è richiesto.",
     "required_if"      => "Il campo :attribute è richiesto quando :other è :value.",
     "required_with"    => "Il campo :attribute è richiesto quando :values è presente.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "Il campo :attribute è richiesto quando :values non è presente.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => ":attribute e :other devono coincidere.",
@@ -80,7 +82,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

@@ -27,6 +27,7 @@ return array(
         "string"  => "Το πεδίο :attribute πρέπει να είναι μεταξύ :min - :max χαρακτήρες.",
         "array"   => "Το πεδίο :attribute πρέπει να έχει μεταξύ :min - :max αντικείμενα."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "Η επιβεβαίωση του :attribute δεν ταιριάζει.",
     "date"             => "Το πεδίο :attribute δεν αποτελεί αποδεκτή ημερομηνία.",
     "date_format"      => "Το πεδίο :attribute δεν είναι της μορφής :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => "Το πεδίο :attribute είναι απαραίτητο.",
     "required_if"      => "Το πεδίο :attribute είναι απαραίτητο όταν το πεδίο :other είναι :value.",
     "required_with"    => "Το πεδίο :attribute είναι απαραίτητο όταν υπάρχει :values.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "Το πεδίο :attribute είναι απαραίτητο όταν δεν υπάρχει :values.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => "Τα πεδία :attribute και :other πρέπει να είναι ίδια.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

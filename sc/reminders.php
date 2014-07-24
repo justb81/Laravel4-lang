@@ -13,12 +13,12 @@ return array(
     |
     */
 
-    "password" => "Mật khẩu phải gồm 6 ký tự và khớp với phần xác nhận.",
+    "password" => "Is password depent èssere a su mancu de 6 caràteres e depent èssere uguales.",
 
-    "user"     => "Không tìm thấy user với địa chỉ email này.",
+    "user"     => "Non s'agatat un'impitadore assotziadu a custu indiritzu email.",
 
-    "token"    => "Mã reset mật khẩu không hợp lệ.",
+    "token"    => "Custu token pro torrare a impostare sa password no est bàlidu.",
 
-    "sent"     => "Cấp lại mật khẩu đã đuợc gửi!",
+    "sent"     => "Regordu de sa password imbiadu!",
 
 );

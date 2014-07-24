@@ -27,6 +27,7 @@ return array(
         "string"  => "A(z) :attribute hossza :min és :max karakter között kell, hogy legyen!",
         "array"   => "The :attribute must have between :min - :max items."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "A(z) :attribute nem egyezik a megerősítéssel.",
     "date"             => "A(z) :attribute nem érvényes dátum.",
     "date_format"      => "A(z) :attribute nem egyezik az alábbi dátum formátummal :format!",
@@ -58,6 +59,7 @@ return array(
     "required"         => "A(z) :attribute megadása kötelező!",
     "required_if"      => "A(z) :attribute megadása kötelező, ha a(z) :other értéke :value!",
     "required_with"    => "A(z) :attribute megadása kötelező, ha a(z) :values értékek léteznek.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "A(z) :attribute megadása kötelező, ha a(z) :values értékek nem léteznek.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => "A(z) :attribute és :other mezőknek egyezniük kell!",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

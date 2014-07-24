@@ -27,6 +27,7 @@ return array(
         "string"  => ":attribute skal være mellom :min - :max tegn.",
         "array"   => ":attribute må ha mellom :min - :max elementer."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => ":attribute er ikke likt bekreftelsesfeltet.",
     "date"             => ":attribute er ikke en gyldig dato.",
     "date_format"      => ":attribute matcher ikke formatet :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => ":attribute må fylles ut.",
     "required_if"      => ":attribute må fylles ut når :other er :value.",
     "required_with"    => ":attribute må fylles ut når :values er utfyllt.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => ":attribute må fylles ut når :values ikke er utfyllt.",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => ":attribute og :other må være like.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

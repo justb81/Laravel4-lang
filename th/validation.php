@@ -27,6 +27,7 @@ return array(
         "string"  => "ข้อมูล :attribute ต้องอยู่ในช่วงระหว่าง :min - :max ตัวอักษร",
         "array"   => "ข้อมูล :attribute ต้องอยู่ในช่วงระหว่าง :min - :max ค่า"
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "ข้อมูล :attribute ไม่ตรงกัน",
     "date"             => "ข้อมูล :attribute ต้องเป็นวันที่",
     "date_format"      => "ข้อมูล :attribute ไม่ตรงกับข้อมูลกำหนด :format.",
@@ -58,6 +59,7 @@ return array(
     "required"         => "ข้อมูล :attribute จำเป็นต้องกรอก",
     "required_if"      => "ข้อมูล :attribute จำเป็นต้องกรอกเมื่อ :other เป็น :value.",
     "required_with"    => "ข้อมูล :attribute จำเป็นต้องกรอกเมื่อ :values มีค่า",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "ข้อมูล :attribute จำเป็นต้องกรอกเมื่อ :values ไม่มีค่า",
     "required_without_all" => "The :attribute field is required when none of :values are present.",
     "same"             => "ข้อมูล :attribute และ :other ต้องถูกต้อง",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

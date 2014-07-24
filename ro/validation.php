@@ -26,6 +26,7 @@ return array(
         "string"  => "Câmpul :attribute trebuie să fie între :min și :max caractere.",
         "array"   => "Câmpul :attribute trebuie să aibă :min - :max elemente."
     ),
+    "boolean"          => "The :attribute field must be true or false",
     "confirmed"        => "Confirmarea :attribute nu se potrivește.",
     "date"             => "Câmpul :attribute nu este o dată validă.",
     "date_format"      => "Câmpul :attribute trebuie să fie intr-un format valid.",
@@ -57,6 +58,7 @@ return array(
     "required"         => "Câmpul :attribute este obligatoriu.",
     "required_if"      => "Câmpul :attribute este necesar atunci când :other e :value.",
     "required_with"    => "Câmpul :attribute este necesar atunci când :values este prezent.",
+    "required_with_all" => "The :attribute field is required when :values is present.",
     "required_without" => "Câmpul :attribute este necesar atunci când :values nu este prezent.",
     "required_without_all" => "Câmpul :attribute este necesar atunci când nici una din valorile :values ne este prezentă.",
     "same"             => "Câmpul :attribute și :other trebuie să fie identice.",
@@ -80,7 +82,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------

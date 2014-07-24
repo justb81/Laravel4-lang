@@ -27,29 +27,30 @@ return array(
         "string"  => ":attribute skal være imellem :min - :max tegn.",
         "array"   => ":attribute skal indeholde mellem :min - :max elementer."
     ),
+    "boolean"          => ":attribute skal være sandt eller falsk",
     "confirmed"        => ":attribute er ikke det samme som bekræftelsesfeltet.",
     "date"             => ":attribute er ikke en gyldig dato.",
     "date_format"      => ":attribute matcher ikke formatet :format.",
     "different"        => ":attribute og :other skal være forskellige.",
-    "digits"           => ":attribute skal have :digits decimaler.",
-    "digits_between"   => ":attribute skal have mellem :min og :max decimaler.",
-    "email"            => ":attribute format er ugyldigt.",
+    "digits"           => ":attribute skal have :digits cifre.",
+    "digits_between"   => ":attribute skal have mellem :min og :max cifre.",
+    "email"            => ":attribute skal være en gyldig e-mailadresse.",
     "exists"           => "Det valgte :attribute er ugyldig.",
     "image"            => ":attribute skal være et billede.",
     "in"               => "Det valgte :attribute er ugyldig.",
-    "integer"          => ":attribute skal være et helt tal.",
+    "integer"          => ":attribute skal være et heltal.",
     "ip"               => ":attribute skal være en gyldig IP adresse.",
     "max"              => array(
-        "numeric" => ":attribute skal være mindre end :max.",
-        "file"    => ":attribute skal være mindre end :max kilobytes.",
-        "string"  => ":attribute skal være kortere end :max tegn.",
+        "numeric" => ":attribute skal være højest :max.",
+        "file"    => ":attribute skal være højest :max kilobytes.",
+        "string"  => ":attribute skal være højest :max tegn.",
         "array"   => ":attribute må ikke indeholde mere end :max elementer."
     ),
     "mimes"            => ":attribute skal være en fil af typen: :values.",
     "min"              => array(
-        "numeric" => ":attribute skal være større end :min.",
-        "file"    => ":attribute skal være større end :min kilobytes.",
-        "string"  => ":attribute skal være længere end :min tegn.",
+        "numeric" => ":attribute skal være mindst :min.",
+        "file"    => ":attribute skal være mindst :min kilobytes.",
+        "string"  => ":attribute skal være mindst :min tegn.",
         "array"   => ":attribute skal indeholde mindst :min elementer."
     ),
     "not_in"           => "Den valgte :attribute er ugyldig.",
@@ -58,8 +59,9 @@ return array(
     "required"         => ":attribute skal udfyldes.",
     "required_if"      => ":attribute skal udfyldes når :other er :value.",
     "required_with"    => ":attribute skal udfyldes når :values er udfyldt.",
+    "required_with_all" => ":attribute skal udfyldes når :values er udfyldt.",
     "required_without" => ":attribute skal udfyldes når :values ikke er udfyldt.",
-    "required_without_all" => "The :attribute field is required when none of :values are present.",
+    "required_without_all" => ":attribute skal udfyldes når ingen af :values er udfyldt.",
     "same"             => ":attribute og :other skal være ens.",
     "size"             => array(
         "numeric" => ":attribute skal være :size.",
@@ -81,7 +83,11 @@ return array(
     |
     */
 
-    'custom' => array(),
+    'custom' => array(
+        'attribute-name' => array(
+            'rule-name' => 'custom-message',
+        ),
+    ),
 
     /*
     |--------------------------------------------------------------------------
